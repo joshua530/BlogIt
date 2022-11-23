@@ -1,13 +1,12 @@
 {
-  "name": "financial-blog",
+  "name": "blog-it",
   "version": "1.0.0",
-  "description": "Financial blog",
+  "description": "Simple Blog Application",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "author": "joshua",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
