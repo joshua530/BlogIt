@@ -39,6 +39,10 @@ Anonymous users on the other hand are only able to view posts and read comments.
   - `ENVIRONMENT`(optional) - defaults to 'development'
   - `PORT`(optional) - defaults to 8000
   - **the .env file should be placed in the project root**
+- alternatively, you could set the variables before the command for running the server as in:<br>
+```<bash>
+SECRET_KEY=key DB_URI=uri ENVIRONMENT=env PORT=port npm run dev
+```
 
 ##### Running the project
 Clone the repository\
