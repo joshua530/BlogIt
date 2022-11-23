@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "_id": 1,
+      "email": "user@email.com",
+      "password": "password",
+      "slug": "user-1"
+    },
+    {
+      "username": "user2",
+      "_id": 2,
+      "email": "user@email.com",
+      "password": "password",
+      "slug": "user-2"
+    },
+    {
+      "username": "user3",
+      "_id": 3,
+      "email": "user@email.com",
+      "password": "password",
+      "slug": "user-3"
+    },
+    {
+      "username": "user4",
+      "_id": 4,
+      "email": "user@email.com",
+      "password": "password",
+      "slug": "user-4"
+    },
+    {
+      "username": "user5",
+      "_id": 5,
+      "email": "user@email.com",
+      "password": "password",
+      "slug": "user-5"
+    }
+  ],
+  "posts": [
+    {
+      "_id": 1,
+      "content": "post 1 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-1",
+      "slug": "post-1"
+    },
+    {
+      "_id": 2,
+      "content": "post 2 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-1",
+      "slug": "post-2"
+    },
+    {
+      "_id": 3,
+      "content": "post 3 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-1",
+      "slug": "post-3"
+    },
+    {
+      "_id": 4,
+      "content": "post 4 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-2",
+      "slug": "post-4"
+    },
+    {
+      "_id": 5,
+      "content": "post 5 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-4",
+      "slug": "post-5"
+    },
+    {
+      "_id": 6,
+      "content": "post 6 content",
+      "datePosted": "2022-11-22",
+      "dateUpdated": "2022-11-29",
+      "userSlug": "user-3",
+      "slug": "post-6"
+    }
+  ],
+  "comments": [
+    {
+      "_id": 1,
+      "postSlug": "post-3",
+      "userName": "user5",
+      "userSlug": "user-5",
+      "content": "comment 1"
+    },
+    {
+      "_id": 2,
+      "postSlug": "post-1",
+      "userName": "user5",
+      "userSlug": "user-5",
+      "content": "comment 2"
+    },
+    {
+      "_id": 3,
+      "postSlug": "post-3",
+      "userName": "user2",
+      "userSlug": "user-2",
+      "content": "comment 3"
+    },
+    {
+      "_id": 4,
+      "postSlug": "post-6",
+      "userName": "user5",
+      "userSlug": "user-5",
+      "content": "comment 4"
+    },
+    {
+      "_id": 5,
+      "postSlug": "post-4",
+      "userName": "user3",
+      "userSlug": "user-3",
+      "content": "comment 5"
+    },
+    {
+      "_id": 6,
+      "postSlug": "post-4",
+      "userName": "user2",
+      "userSlug": "user-2",
+      "content": "comment 6"
+    },
+    {
+      "_id": 7,
+      "postSlug": "post-3",
+      "userName": "user4",
+      "userSlug": "user-4",
+      "content": "comment 7"
+    },
+    {
+      "_id": 8,
+      "postSlug": "post-2",
+      "userName": "user1",
+      "userSlug": "user-1",
+      "content": "comment 8"
+    }
+  ]
+}
