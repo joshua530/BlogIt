@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# runs the server
+
+cd backend
+# if you want to add the environment variables via the command, use the format
+# below
+# SECRET_KEY=key DB_URI=uri ENVIRONMENT=env PORT=port npm run dev
+npm run dev
