@@ -45,7 +45,7 @@ Changes can therefore be made from both browsers as well as clients that can sen
 ## Usage
 ### Prerequisites
 - npm (**Ensure nodejs is installed. Installation instructions can be found [here](https://nodejs.org/en/download/) for mac, windows and linux**)
-- .env file with the following configurations:
+- set the following environment variables(use .env or set in command line)
   - `SECRET_KEY` - for generating tokens
   - `DB_URI` - mongodb server uri
   - `ENVIRONMENT`(optional) - defaults to 'development'
