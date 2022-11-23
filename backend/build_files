@@ -1,0 +1,8 @@
+#!/bin/bash
+# builds and copies static files from frontend folder
+
+bash -c 'cd ../frontend &&
+npm run build &&
+mkdir -p ../backend/public &&
+cp -r build/*.{json,html} ../backend/public &&
+cp -r build/static/* ../backend/public'
