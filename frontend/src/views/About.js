@@ -6,7 +6,6 @@ import parse from 'html-react-parser';
 const About = () => {
   const [intro, setIntro] = useState(null);
   const [about, setAbout] = useState(null);
-  const [mission, setMission] = useState(null);
 
   useEffect(() => {
     fetchAbout();
@@ -18,7 +17,6 @@ const About = () => {
       .then((data) => {
         setIntro(data.welcomeText);
         setAbout(data.aboutText);
-        setMission(data.missionText);
       });
   };
 
@@ -29,12 +27,8 @@ const About = () => {
         <p className="col-md-4 mt-2 fs-5">{intro ? parse(intro) : ''}</p>
       </div>
       <div className="mt-md-3">
-        <h4>About us</h4>
-        <p>{about ? about : <Spinner />}</p>
-      </div>
-      <div>
-        <h4>Our mission</h4>
-        <p>{mission ? mission : <Spinner />}</p>
+        <h4>Hi there 👋</h4>
+        <p>{about ? parse(about) : <Spinner />}</p>
       </div>
     </>
   );
