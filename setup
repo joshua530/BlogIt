@@ -2,5 +2,5 @@
 # installs all required dependencies
 
 cd frontend && npm install
-cd ../backend && npm install
+cd "$PWD"/../backend && npm install
 ./build_files
