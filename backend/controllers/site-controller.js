@@ -9,8 +9,6 @@ const { cleanPost } = require('../utils/models');
  */
 const home = asyncHandler(async (req, res) => {
   const imageUrl = '<img url>';
-  const introText =
-    'Welcome to <strong>BlogIt</strong> where people share ideas';
   const posts = await Post.find().limit(10).sort({ _id: 'desc' });
 
   const latestPosts = [];
@@ -18,7 +16,7 @@ const home = asyncHandler(async (req, res) => {
     latestPosts.push(cleanPost(post, true));
   });
 
-  const resData = { imageUrl, introText, latestPosts };
+  const resData = { imageUrl, latestPosts };
   res.status(200).json(resData);
 });
 
@@ -30,11 +28,16 @@ const home = asyncHandler(async (req, res) => {
 const about = (req, res) => {
   const aboutPage = {
     welcomeText:
-      'Welcome to <strong>BlogIt</strong> where people share ideas',
+      'Welcome to <strong>BlogIt</strong> where people <strong>share</strong> and <strong>learn</strong> new ideas',
     aboutText:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus delectus, provident ab quos unde magnam eos beatae est possimus blanditiis reiciendis et consectetur sit ex quidem veniam. Sapiente, repudiandae temporibus!',
-    missionText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam natus quo sit cum, aliquam cumque dolorum quis, molestiae, voluptatibus consequuntur quas soluta. Porro, voluptate accusamus at maiores odio eum eaque?',
+      `<p>Do you have an Idea that you feel the world needs to know about and can't wait to share it?</p>
+
+      <p>You have come to the right place, just <a href="/sign-up">create an account</a> with us and you'll be able to do just that.</p>
+      
+      <p>Come to see what awesome ideas other people have had to share? Good. We have a <a href="/">list of them here</a>. Hope you enjoy the plentiful ideas that we have in store for you.</p>
+      
+      <p>Whether you want to just share an idea or to look at other awesome ideas, and maybe even gain inspiration from them, we have all that covered for you</p>
+      `,
     welcomeImage: '<image url>'
   };
   res.status(200).json(aboutPage);
