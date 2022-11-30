@@ -33,13 +33,6 @@ const Home = ({ indexPost }) => {
   const alert = useAlert();
   return (
     <>
-      <div className="row">
-        <img className="img-fluid col-md-8 mt-2 rounded" src={img} alt="" />
-  
-        <p className="col-md-4 mt-2 fs-5">
-          {homePageData.introText ? parse(homePageData.introText) : <Spinner />}
-        </p>
-      </div>
       <div className="mt-2 post-banner">
         <h1>Latest posts</h1>
         {homePageData.latestPosts ? (
