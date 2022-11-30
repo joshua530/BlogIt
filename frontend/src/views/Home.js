@@ -35,8 +35,6 @@ const Home = ({ indexPost }) => {
     <>
       <div className="row">
         <img className="img-fluid col-md-8 mt-2 rounded" src={img} alt="" />
-        <span>Photo by <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </span>
   
         <p className="col-md-4 mt-2 fs-5">
           {homePageData.introText ? parse(homePageData.introText) : <Spinner />}

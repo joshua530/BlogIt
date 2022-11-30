@@ -26,7 +26,6 @@ const About = () => {
     <>
       <div className="row">
         <img className="img-fluid col-md-8 mt-2 rounded" src={img} alt="" />
-        <p>Photo by <a href="https://unsplash.com/@ameenfahmy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ameen Fahmy</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         <p className="col-md-4 mt-2 fs-5">{intro ? parse(intro) : ''}</p>
       </div>
       <div className="mt-md-3">
