@@ -55,10 +55,9 @@ Changes can therefore be made from both browsers as well as clients that can sen
 - run `./setup` to install dependencies
 - run `./run` to run the server
 
-## Issues
+## Current Issues
 - The json token is not invalidated on logout, could lead to impersonation if someone other than the owner were to get their hands on it before expiry
 - Transitioning in between pages in the frontend sometimes fails
-- Some of the content delivered to the frontend is unescaped to prevent raw html tags from being displayed to the user. This could be exploited to carry out xss
 
 For more information, check out the README files in the frontend and backend folders
 
