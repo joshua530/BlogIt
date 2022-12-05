@@ -62,5 +62,8 @@ Changes can therefore be made from both browsers as well as clients that can sen
 
 For more information, check out the README files in the frontend and backend folders
 
+## Contribution
+Contributions are always welcome! Please read the [contribution guidelines](./contribution.md) first.
+
 ## Authors
 Joshua Omari - [Github](https://github.com/joshua530)
